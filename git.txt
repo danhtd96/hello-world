@@ -1,0 +1,29 @@
+git.txt
+
+Repository: quản lý source code
+
+Phân biệt Remote Local và Remote Repo
+	- Remote Local: có branch dạng (master, abc, develop ....)
+	- Remote Repo: có branch dạng remote/master, remote/abc, remote/develop
+	  Ex: repo có tên origin -> remote repo có dạng origin/master, origin/abc
+
+Workflow: máy sẽ chia làm 3 phần
+	- Staged (Index): file được add thì sẽ vào phần này 
+	- Unstaged (Modified): file đã được push sau đó có chỉnh sửa và chưa thực hiện lệnh add thì sẽ ở phần này.
+	- Untracked: một file mới hoàn toàn và chưa được push lên remote thì sẽ ở phần này.
+
+	- File từ Untracked, Unstaged -> Staged
+
+Lệnh git pull : bao gồm 2 lệnh 
+	- git fetch : lấy những cập nhật mới nhất từ remote repo về remote local
+	- git merge : Merge những cập nhật đó vào current branch
+
+
+- Staged -> Unstage: DÙng lệnh gì? git reset HEAD <filename>
+- xóa bỏ file trong Unstage: dùng lệnh gì? -> git rm -f <filename>
+- các lệnh add, remove, list của Git Remote.
+	+ git remote add origin <server> : add remote repo 
+	+ git remote -v: hiển thị tất cả remote
+	+ git remote rm <name>: xóa remote 
+- Add tất cả các file TRONG MỘT FOLDER -> git add . 
+- git push heroku staging:master: ý nghĩa câu này -> tạo branch master trong remote repo heroku bằng cách copy branch staging 

@@ -1,0 +1,56 @@
+lệnh git.txt
+
+- git init 
+dùng để tạo repo mới
+
+- git push origin master
+push code từ nhánh(branch) master lên remote origin
+
+- git add <filename>
+thêm file vào phần Staged (Index)
+
+- git add .
+Add tất cả file tại folder hiện tại -> Staged
+
+- git reset HEAD <filename>
+chuyển file từ Staged (Index) -> Unstage 
+
+- git rm -f <filename>
+xóa bỏ file trong Unstage
+
+- git commit -m "message"
+Commite file đã add vào Index tới HEAD
+
+- git branch
+liệt kê tất cả branch
+
+- git branch <name>
+tạo branch nhưng ko chuyển sang branch đó 
+
+- git checkout -b <branchname>
+tạo một branch mới và chuyển sang branch đó
+
+- git checkout <branchname>
+chuyển đến branch đó
+
+- git checkout -d <branchname>
+xóa branch
+
+-git pull
+bao gồm 2 lệnh git fetch và git merge: lấy những dữ liệu từ remote repo về remote local sau đó merge vào current branch
+
+- git fetch origin 
+lấy dữ liệu từ remote repo về remote local 
+
+- git merge <branch>
+Merge branch đó vào branch hiện tại
+
+- git log
+xem lịch sử commit
+
+
++ GIT REMOTE
+
+- git remote add origin <server> : add remote repo 
+- git remote -v: hiển thị tất cả remote
+- git remote rm <name>: xóa remote-
